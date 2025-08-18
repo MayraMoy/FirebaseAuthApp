@@ -1,5 +1,9 @@
+// src/services/firebase/config.ts
+
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
+import { getStorage } from 'firebase/storage';
 
 // Configuración usando variables de entorno
 const firebaseConfig = {
@@ -22,7 +26,7 @@ const requiredKeys = [
 
 const missingKeys = requiredKeys.filter(key => !process.env[key]);
 
-if (missingKeys.length > 0) {
+if (missingKeys.length > 0 && !__DEV__) {
   console.error('🔥 Firebase Configuration Error:');
   console.error('Missing environment variables:', missingKeys.join(', '));
   console.error('Please check your .env file');
@@ -32,8 +36,12 @@ if (missingKeys.length > 0) {
 // Inicializar Firebase
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
+export const db = getFirestore(app);
+export const storage = getStorage(app);
 
 if (__DEV__) {
   console.log('🔥 Firebase initialized successfully');
   console.log('📋 Project ID:', firebaseConfig.projectId);
+  console.log('🗃️ Firestore enabled');
+  console.log('📱 Storage enabled');
 }

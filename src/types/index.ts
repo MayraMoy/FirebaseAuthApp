@@ -33,4 +33,6 @@ export type RootStackParamList = {
   Login: undefined;
   Register: undefined;
   Home: undefined;
+  Products: undefined; // La lista de productos no necesita parámetros
+  ProductDetail: { product: { title: string; description: string; /* ... otras propiedades del producto */ } }; // Define la estructura del objeto 'product'
 };
