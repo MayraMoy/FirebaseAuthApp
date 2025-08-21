@@ -14,7 +14,7 @@ import { getStorage, connectStorageEmulator } from 'firebase/storage';
 
 // Configuración de Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyDELjxVG7PLYBKnJ3ByrqeBYFl6IatSCfc",
+  apiKey: "No te puedo decir",
   authDomain: "circulapp-b9564.firebaseapp.com",
   projectId: "circulapp-b9564",
   storageBucket: "circulapp-b9564.firebasestorage.app",
