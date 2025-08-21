@@ -205,7 +205,7 @@ const styles = StyleSheet.create({
   },
   footerLink: {
     fontSize: 16,
-    color: '#007AFF',
+    color: '#C62828',
     fontWeight: '600',
   },
 });
