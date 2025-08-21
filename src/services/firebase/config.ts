@@ -3,7 +3,7 @@ import { getAuth } from 'firebase/auth';
 
 // Configuración usando variables de entorno
 const firebaseConfig = {
-  apiKey: "AIzaSyDELjxVG7PLYBKnJ3ByrqeBYFl6IatSCfc",
+  apiKey: "no te puedo decir",
   authDomain: "circulapp-b9564.firebaseapp.com",
   projectId: "circulapp-b9564",
   storageBucket: "circulapp-b9564.firebasestorage.app",
