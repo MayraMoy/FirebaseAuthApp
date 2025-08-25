@@ -14,7 +14,9 @@ import { getStorage, connectStorageEmulator } from 'firebase/storage';
 
 // Configuración de Firebase
 const firebaseConfig = {
+
   apiKey: "No te puedo decir",
+
   authDomain: "circulapp-b9564.firebaseapp.com",
   projectId: "circulapp-b9564",
   storageBucket: "circulapp-b9564.firebasestorage.app",
@@ -61,6 +63,7 @@ if (Platform.OS === 'web' && typeof window !== 'undefined') {
 if (__DEV__) {
   console.log('🔥 Firebase initialized successfully');
   console.log('📋 Project ID:', firebaseConfig.projectId);
+
   console.log('🗃️ Firestore enabled');
   console.log('📱 Storage enabled');
   console.log('🔐 Auth enabled (persistencia automática)');
@@ -99,3 +102,4 @@ export const disableFirestoreNetwork = async () => {
 
 // 👇 Exportar instancias listas para usar
 export { app, auth, db, storage };
+
