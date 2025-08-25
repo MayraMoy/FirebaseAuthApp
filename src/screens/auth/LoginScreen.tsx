@@ -177,12 +177,12 @@ const styles = StyleSheet.create({
   demoTitle: {
     fontSize: 14,
     fontWeight: 'bold',
-    color: '#1976D2',
+    color: '#63ce9b',
     marginBottom: 4,
   },
   demoText: {
     fontSize: 12,
-    color: '#1976D2',
+    color: '#63ce9b',
   },
   footer: {
     flexDirection: 'row',
@@ -195,7 +195,7 @@ const styles = StyleSheet.create({
   },
   footerLink: {
     fontSize: 16,
-    color: '#007AFF',
+    color: '#C62828',
     fontWeight: '600',
   },
 });

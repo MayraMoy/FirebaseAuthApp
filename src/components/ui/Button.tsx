@@ -35,7 +35,7 @@ export const Button: React.FC<ButtonProps> = ({
       activeOpacity={0.8}
     >
       {loading ? (
-        <ActivityIndicator color={variant === 'primary' ? '#FFFFFF' : '#007AFF'} />
+        <ActivityIndicator color={variant === 'primary' ? '#FFFFFF' : '#63ce9b'} />
       ) : (
         <Text style={textStyle}>{title}</Text>
       )}
@@ -54,8 +54,8 @@ const styles = StyleSheet.create({
     marginVertical: 8,
   },
   primary: {
-    backgroundColor: '#007AFF',
-    shadowColor: '#007AFF',
+    backgroundColor: '#63ce9b',
+    shadowColor: '#63ce9b',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.3,
     shadowRadius: 8,
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
   secondary: {
     backgroundColor: 'transparent',
     borderWidth: 2,
-    borderColor: '#007AFF',
+    borderColor: '#63ce9b',
   },
   disabled: {
     opacity: 0.6,
@@ -77,6 +77,6 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
   },
   secondaryText: {
-    color: '#007AFF',
+    color: '#63ce9b',
   },
 });
